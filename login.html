@@ -7,6 +7,32 @@
     <title>Rifatuzzaman Rifat</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="nav.css" />
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 50px;
+      }
+      .login-form input {
+        margin-top: 1em;
+        font-size: 1.5em;
+        padding: 5px 10px;
+      }
+      .login-form input[type="submit"] {
+        background-color: tomato;
+        border: 0;
+        border-radius: 5px;
+        color: white;
+      }
+      .log-con {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -33,24 +59,14 @@
         </ul>
       </nav>
     </header>
-    <div class="con">
-      <h1>Welcome to my Midea</h1>
-      <audio src="midea/mp3/なとり - Overdose.mp3" controls>mp3</audio>
-      <hr />
-      <video src="midea/mp4/Anime [amv] dancin.mp4" width="700px" controls>
-        mp4
-      </video>
-      <hr />
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/RSI_JL3sMqs"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
+    <section class="log-con">
+      <form class="login-form">
+        <h1>Login Now</h1>
+        <input type="text" placeholder="Enter your email" />
+        <input type="password" placeholder="Password" />
+        <input type="submit" value="Login" />
+      </form>
+    </section>
     <footer>
       <h4>Be Humble</h4>
       <h5>I'm gonna do it</h5>
